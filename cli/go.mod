@@ -1,4 +1,4 @@
-module github.com/faryeyay/6sintune
+module github.com/faryeyay/6sintune/cli
 
 go 1.17
 
