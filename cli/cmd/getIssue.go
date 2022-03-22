@@ -18,7 +18,7 @@ var (
 )
 
 // getIssueCmd retrieves an issue by the issue ID. Currently this only supports
-// Atlassian Jira. 
+// Atlassian Jira.
 var getIssueCmd = &cobra.Command{
 	Use:   "get",
 	Short: "Get an issue with the issue number passed",
@@ -27,7 +27,7 @@ number passed in. This should be used as a way to get quick
 details about an issue.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		jiraURL := viper.GetString("jira.url")
-		username := viper.GetString("jira.username")
+		email := viper.GetString("jira.email")
 		password := viper.GetString("jira.password")
 
 		if issueName == "" {
@@ -38,7 +38,7 @@ details about an issue.`,
 		fmt.Printf("looking up issue: %s\n", issueName)
 
 		tp := jira.BasicAuthTransport{
-			Username: strings.TrimSpace(username),
+			Username: strings.TrimSpace(email),
 			Password: strings.TrimSpace(password),
 		}
 
