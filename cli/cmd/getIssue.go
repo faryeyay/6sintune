@@ -17,7 +17,8 @@ var (
 	issueName string
 )
 
-// getIssueCmd represents the get command
+// getIssueCmd retrieves an issue by the issue ID. Currently this only supports
+// Atlassian Jira. 
 var getIssueCmd = &cobra.Command{
 	Use:   "get",
 	Short: "Get an issue with the issue number passed",
@@ -63,6 +64,7 @@ details about an issue.`,
 		fmt.Printf("Type: %s\n", issue.Fields.Type.Name)
 		fmt.Printf("Priority: %s\n", issue.Fields.Priority.Name)
 		fmt.Printf("Assignee: %v\n", issue.Fields.Assignee.DisplayName)
+		fmt.Printf("Status: %v\n", issue.Fields.Status.Name)
 
 	},
 }
