@@ -1,7 +1,13 @@
 load("@bazel_gazelle//:def.bzl", "gazelle")
+load("@com_github_atlassian_bazel_tools//goimports:def.bzl", "goimports")
+
+prefix = "github.com/faryeyay/6sintune"
 
 # gazelle:prefix github.com/faryeyay/6sintune
-gazelle(name = "gazelle")
+gazelle(
+    name = "gazelle",
+    prefix = prefix,
+)
 
 gazelle(
     name = "gazelle-update-repos",
@@ -9,7 +15,6 @@ gazelle(
         "-from_file=go.mod",
         "-to_macro=deps.bzl%go_dependencies",
         "-prune",
-        "-build_file_proto_mode=disable_global",
     ],
     command = "update-repos",
 )
@@ -18,4 +23,11 @@ load("@com_github_bazelbuild_buildtools//buildifier:def.bzl", "buildifier")
 
 buildifier(
     name = "buildifier",
+)
+
+goimports(
+    name = "goimports",
+    display_diffs = True,
+    prefix = prefix,
+    write = False,
 )

@@ -1,9 +1,25 @@
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+# gazelle:prefix github.com/faryeyay/6sintune/cli/cmd
+
+gazelle(name = "gazelle")
+
 load("@io_bazel_rules_go//go:def.bzl", "go_library")
 
 go_library(
     name = "cmd",
-    srcs = ["root.go"],
+    srcs = [
+        "getIssue.go",
+        "issues.go",
+        "listIssues.go",
+        "root.go",
+        "watchIssue.go",
+    ],
     importpath = "github.com/faryeyay/6sintune/cli/cmd",
     visibility = ["//visibility:public"],
-    deps = ["@com_github_spf13_cobra//:go_default_library"],
+    deps = [
+        "@com_github_andygrunwald_go_jira//:go_default_library",
+        "@com_github_spf13_cobra//:go_default_library",
+        "@com_github_spf13_viper//:go_default_library",
+    ],
 )
