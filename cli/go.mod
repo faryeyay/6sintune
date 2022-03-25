@@ -3,7 +3,24 @@ module github.com/faryeyay/6sintune/cli
 go 1.17
 
 require (
-	github.com/andygrunwald/go-jira v1.15.1 // indirect
+	github.com/andygrunwald/go-jira v1.15.1
+	github.com/aws/aws-sdk-go-v2 v1.16.1
+	github.com/aws/aws-sdk-go-v2/config v1.15.2
+	github.com/aws/aws-sdk-go-v2/service/costexplorer v1.18.2
+	github.com/spf13/cobra v1.3.0
+	github.com/spf13/viper v1.10.1
+)
+
+require (
+	github.com/aws/aws-sdk-go-v2/credentials v1.11.1 // indirect
+	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.12.2 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.1.8 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.4.2 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/ini v1.3.9 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.9.2 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sso v1.11.2 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sts v1.16.2 // indirect
+	github.com/aws/smithy-go v1.11.2 // indirect
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
 	github.com/golang-jwt/jwt/v4 v4.3.0 // indirect
@@ -16,10 +33,8 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/spf13/afero v1.6.0 // indirect
 	github.com/spf13/cast v1.4.1 // indirect
-	github.com/spf13/cobra v1.3.0 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
-	github.com/spf13/viper v1.10.1 // indirect
 	github.com/subosito/gotenv v1.2.0 // indirect
 	github.com/trivago/tgo v1.0.7 // indirect
 	golang.org/x/sys v0.0.0-20211210111614-af8b64212486 // indirect

@@ -16,6 +16,79 @@ def go_dependencies():
         version = "v0.3.10",
     )
     go_repository(
+        name = "com_github_aws_aws_sdk_go_v2",
+        importpath = "github.com/aws/aws-sdk-go-v2",
+        sum = "h1:udzee98w8H6ikRgtFdVN9JzzYEbi/quFfSvduZETJIU=",
+        version = "v1.16.1",
+    )
+    go_repository(
+        name = "com_github_aws_aws_sdk_go_v2_config",
+        importpath = "github.com/aws/aws-sdk-go-v2/config",
+        sum = "h1:4oGcm1yqqtTc2Z8YpwehwjSiBA3TR0iZbFCgNlXcVFQ=",
+        version = "v1.15.2",
+    )
+    go_repository(
+        name = "com_github_aws_aws_sdk_go_v2_credentials",
+        importpath = "github.com/aws/aws-sdk-go-v2/credentials",
+        sum = "h1:uR323+M7ca3v2GKXbFSwWbNA3kLjjFzaalL6W4rpB9s=",
+        version = "v1.11.1",
+    )
+    go_repository(
+        name = "com_github_aws_aws_sdk_go_v2_feature_ec2_imds",
+        importpath = "github.com/aws/aws-sdk-go-v2/feature/ec2/imds",
+        sum = "h1:+AULPOLHEDjH2TcNKpixl4gt26hFOdlUuuisZUBFczA=",
+        version = "v1.12.2",
+    )
+    go_repository(
+        name = "com_github_aws_aws_sdk_go_v2_internal_configsources",
+        importpath = "github.com/aws/aws-sdk-go-v2/internal/configsources",
+        sum = "h1:CDaO90VZVBAL1sK87S5oSPIrp7yZqORv1hPIi2UsTMk=",
+        version = "v1.1.8",
+    )
+    go_repository(
+        name = "com_github_aws_aws_sdk_go_v2_internal_endpoints_v2",
+        importpath = "github.com/aws/aws-sdk-go-v2/internal/endpoints/v2",
+        sum = "h1:XXR3cdOcKRCTZf6ctcqpMf+go1BdzTm6+T9Ul5zxcMI=",
+        version = "v2.4.2",
+    )
+    go_repository(
+        name = "com_github_aws_aws_sdk_go_v2_internal_ini",
+        importpath = "github.com/aws/aws-sdk-go-v2/internal/ini",
+        sum = "h1:8umg6LSQ/b0+ZTq+Ro8K7VLGVwd7kiYQtIACpf2N/Yo=",
+        version = "v1.3.9",
+    )
+    go_repository(
+        name = "com_github_aws_aws_sdk_go_v2_service_costexplorer",
+        importpath = "github.com/aws/aws-sdk-go-v2/service/costexplorer",
+        sum = "h1:RfvqYC17zEeauxQFsLLZJZXfRNR9l/sCMq6GRI15AWk=",
+        version = "v1.18.2",
+    )
+    go_repository(
+        name = "com_github_aws_aws_sdk_go_v2_service_internal_presigned_url",
+        importpath = "github.com/aws/aws-sdk-go-v2/service/internal/presigned-url",
+        sum = "h1:RrN7V0r8+lUUKZM4OAoCOIZqjPLZPOl6wuwMd2QIryI=",
+        version = "v1.9.2",
+    )
+    go_repository(
+        name = "com_github_aws_aws_sdk_go_v2_service_sso",
+        importpath = "github.com/aws/aws-sdk-go-v2/service/sso",
+        sum = "h1:8fVz1c9B/63w7O0kxbrCTT69iV4DgXnFumarPCZ3Cns=",
+        version = "v1.11.2",
+    )
+    go_repository(
+        name = "com_github_aws_aws_sdk_go_v2_service_sts",
+        importpath = "github.com/aws/aws-sdk-go-v2/service/sts",
+        sum = "h1:qgK5htfKByTiPxS/diZ/mTCfDwGAVuyjRdqu6VoCh80=",
+        version = "v1.16.2",
+    )
+    go_repository(
+        name = "com_github_aws_smithy_go",
+        importpath = "github.com/aws/smithy-go",
+        sum = "h1:eG/N+CcUMAvsdffgMvjMKwfyDzIkjM6pfxMJ8Mzc6mE=",
+        version = "v1.11.2",
+    )
+
+    go_repository(
         name = "com_github_census_instrumentation_opencensus_proto",
         importpath = "github.com/census-instrumentation/opencensus-proto",
         sum = "h1:t/LhUZLVitR1Ow2YOnduCsavhwFUklBMoGVYUCqmCqk=",
@@ -45,12 +118,7 @@ def go_dependencies():
         sum = "h1:wkHLiw0WNATZnSG7epLsujiMCgPAc9xhjJ4tgnAxmfM=",
         version = "v0.3.0",
     )
-    go_repository(
-        name = "com_github_cpuguy83_go_md2man_v2",
-        importpath = "github.com/cpuguy83/go-md2man/v2",
-        sum = "h1:r/myEWzV9lfsM1tFLgDyu0atFtJ1fXn261LKYj/3DxU=",
-        version = "v2.0.1",
-    )
+
     go_repository(
         name = "com_github_davecgh_go_spew",
         importpath = "github.com/davecgh/go-spew",
@@ -255,12 +323,7 @@ def go_dependencies():
         sum = "h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=",
         version = "v1.0.0",
     )
-    go_repository(
-        name = "com_github_russross_blackfriday_v2",
-        importpath = "github.com/russross/blackfriday/v2",
-        sum = "h1:JIOH55/0cWyOuilr9/qlrm0BSXldqnqwMsf35Ld67mk=",
-        version = "v2.1.0",
-    )
+
     go_repository(
         name = "com_github_sagikazarmark_crypt",
         importpath = "github.com/sagikazarmark/crypt",
@@ -282,8 +345,8 @@ def go_dependencies():
     go_repository(
         name = "com_github_spf13_cobra",
         importpath = "github.com/spf13/cobra",
-        sum = "h1:y+wJpx64xcgO1V+RcnwW0LEHxTKRi2ZDPSBjWnrg88Q=",
-        version = "v1.4.0",
+        sum = "h1:R7cSvGu+Vv+qX0gW5R/85dx2kmmJT5z5NM8ifdYjdn0=",
+        version = "v1.3.0",
     )
     go_repository(
         name = "com_github_spf13_jwalterweatherman",
